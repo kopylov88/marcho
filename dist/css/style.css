@@ -177,7 +177,6 @@ body {
 .menu__list-link:hover {
   color: #fe3e57;
   border-bottom: 1px solid #fe3e57;
-  font-weight: 700;
 }
 
 .user-nav__list {
