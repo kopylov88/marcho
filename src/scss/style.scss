@@ -4,4 +4,66 @@
 @import 'global';
 // @import '_fonts';
 
+.header {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  &__list-link {
+    padding: 2px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $title-color;
+    transition: .3s;
+    &--active {
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
+      font-weight: 700;
+    }
+    &:hover {
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
+      font-weight: 700;
+    }
+  }
+}
+.user-nav {
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &__list-link {
+    position: relative;
+  }
+  &__num {
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 @import 'media';
