@@ -1,0 +1,364 @@
+/* Reset and base styles  */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Links */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #8d8d8d;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 40px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu__list-link {
+  padding: 2px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #29282d;
+  transition: 0.3s;
+}
+
+.menu__list-link--active {
+  color: #fe3e57;
+  border-bottom: 1px solid #fe3e57;
+  font-weight: 700;
+}
+
+.menu__list-link:hover {
+  color: #fe3e57;
+  border-bottom: 1px solid #fe3e57;
+}
+
+.user-nav__list {
+  display: flex;
+}
+
+.user-nav__list-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.user-nav__list-link {
+  position: relative;
+}
+
+.user-nav__num {
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe3e57;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #f6f6f6;
+}
+
+.footer-top__inner {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+  padding: 70px 0 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+.footer-top__connect {
+  max-width: 260px;
+}
+
+.footer-top__subscribe {
+  max-width: 470px;
+}
+
+.footer-top__logo {
+  margin-bottom: 35px;
+}
+
+.footer-top__contacts {
+  margin-bottom: 30px;
+}
+
+.footer-top__contacts-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-top__contacts-link {
+  transition: 0.3s;
+}
+
+.footer-top__contacts-link:hover {
+  color: #fe3e57;
+}
+
+.footer-top__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer-top__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-top__socials-link path {
+  transition: 0.3s;
+  fill: #8d8d8d;
+}
+
+.footer-top__socials-link:hover path {
+  fill: #fe3e57;
+}
+
+.footer-top__item-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 1.6363636364;
+  color: #29282d;
+  margin-bottom: 30px;
+  margin-top: -7px;
+}
+
+.footer-top__links-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-top__link {
+  transition: 0.3s;
+}
+
+.footer-top__link:hover {
+  color: #fe3e57;
+}
+
+.footer-top__account-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-top__account-link {
+  transition: 0.3s;
+}
+
+.footer-top__account-link:hover {
+  color: #fe3e57;
+}
+
+.footer-top__form-text {
+  margin-bottom: 30px;
+}
+
+.footer-top__form-input {
+  max-width: 320px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+  padding: 16px 10px;
+  margin-right: 10px;
+}
+
+.footer-top__form-input::-moz-placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+
+.footer-top__form-input::placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+
+.footer-top__form-btn {
+  background-color: #fe3e57;
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.footer-top__form-btn:hover {
+  background-color: #fff;
+  color: #fe3e57;
+  box-shadow: inset 0 0 0 1px #fe3e57, 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+.footer-bottom {
+  padding: 25px 0;
+  font-size: 12px;
+}
+
+.footer-bottom__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom__text {
+  line-height: 2.8333333333;
+}
+
+.footer-bottom__payments span {
+  margin-right: 18px;
+  line-height: 2.8333333333;
+}
+
+.footer-bottom__payments img {
+  vertical-align: sub;
+}
+
+.footer-bottom__payments picture + picture {
+  margin-left: 23px;
+}
