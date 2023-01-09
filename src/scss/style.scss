@@ -2,7 +2,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-// @import '_fonts';
+@import 'fonts';
 
 .header {
   padding: 40px 0;
@@ -22,15 +22,14 @@
   }
   &__list-link {
     padding: 2px 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    @extend %roboto-400;
     text-transform: uppercase;
     color: $title-color;
     transition: 0.3s;
     &--active {
       color: $accent-color;
       border-bottom: 1px solid $accent-color;
-      font-weight: 700;
+      @extend %roboto-700;
     }
     &:hover {
       color: $accent-color;
@@ -117,7 +116,7 @@
     }
   }
   &__item-title {
-    font-family: 'Roboto', sans-serif;
+    @extend %roboto-500;
     font-size: 22px;
     line-height: calc(36 / 22);
     color: $title-color;
@@ -160,15 +159,12 @@
     margin-right: 10px;
     &::placeholder {
       color: $default-color;
+      @extend %quicksand-500;
       font-size: 16px;
     }
   }
   &__form-btn {
-    background-color: $accent-color;
-    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-    position: absolute;
-    color: #fff;
-    text-transform: uppercase;
+    @extend %btn;
     padding: 15px 20px;
     transition: 0.3s;
     &:hover {
@@ -198,6 +194,86 @@
     }
     picture + picture {
       margin-left: 23px;
+    }
+  }
+}
+.top-slider {
+  background-color: #f6f6f6;
+  background-image: url('@img/top-slider-decor.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 60px;
+  &__container {
+    max-width: 1520px;
+  }
+  &__inner {
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__content {
+    padding: 125px 0 0 145px;
+  }
+  &__title {
+    @extend %roboto-700;
+    font-size: 58px;
+    line-height: calc(68 / 58);
+    color: $title-color;
+    margin-bottom: 35px;
+  }
+  &__text {
+    max-width: 470px;
+    margin-bottom: 55px;
+  }
+  &__btn {
+    @extend %btn;
+  }
+  &__img {
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    font-size: 0;
+    li+li {
+      margin-left: 5px;
+    }
+    button {
+      position: relative;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $default-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .slick-active {
+      button {
+        border: 1px solid $accent-color;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $accent-color;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
   }
 }
