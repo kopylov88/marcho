@@ -17,3 +17,13 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.title {
+  @extend %roboto-700;
+  font-size: 48px;
+  color: $title-color;
+  text-align: center;
+}
+.title-text {
+  text-align: center;
+  max-width: 530px;
+}
