@@ -166,12 +166,6 @@
   &__form-btn {
     @extend %btn;
     padding: 15px 20px;
-    transition: 0.3s;
-    &:hover {
-      background-color: #fff;
-      color: $accent-color;
-      box-shadow: inset 0 0 0 1px $accent-color, 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-    }
   }
 }
 .footer-bottom {
@@ -278,7 +272,25 @@
   }
 }
 .category {
+  position: relative;
   padding: 120px 0;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 670px;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 0;
+    background-image: url('@img/decor/category-decor-left.png');
+    background-repeat: no-repeat;
+  }
+  &::after {
+    left: auto;
+    right: 0;
+    background-image: url('@img/decor/category-decor-right.png');
+  }
   &__info {
     position: relative;
     display: flex;
@@ -380,12 +392,58 @@
   &__link {
     @extend %roboto-400;
     color: $title-color;
+    text-transform: uppercase;
     border-bottom: 1px solid transparent;
-    transition: .3s;
+    transition: 0.3s;
     &:hover {
       color: $accent-color;
       border-bottom: 1px solid $accent-color;
     }
+  }
+}
+.tranding-fashion {
+  padding: 120px 0 120px;
+  background-image: url('@img/content/tranding-fashion/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__video {
+    min-height: 485px;
+    max-width: 528px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('@img/content/tranding-fashion/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__video-link {
+  }
+  &__content {
+    max-width: 570px;
+    padding: 75px 0 82px;
+  }
+  &__content-subtitle {
+    font-size: 22px;
+    color: $accent-color;
+    margin-bottom: 25px;
+  }
+  &__content-title {
+    @extend %roboto-700;
+    font-size: 48px;
+    color: $title-color;
+  }
+  &__content-text {
+    margin-bottom: 65px;
+  }
+  &__content-link {
+    @extend %btn;
+    padding: 12px 37px;
   }
 }
 
