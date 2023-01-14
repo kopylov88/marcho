@@ -49,6 +49,9 @@ body {
   font-weight: 500;
 }
 
+.deal__link,
+.products-box__item-title,
+.products__link,
 .item-top__link,
 .category__info-title,
 .menu__list-link,
@@ -59,12 +62,17 @@ body {
   font-weight: 400;
 }
 
+.products-box__item-prices,
 .item-top__title,
 .footer-top__item-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
+.deal__days,
+.deal__hours,
+.deal__minutes,
+.deal__seconds,
 .tranding-fashion__content-title,
 .top-slider__title,
 .menu__list-link--active,
@@ -1179,6 +1187,7 @@ body {
 .title-text {
   text-align: center;
   max-width: 530px;
+  margin: 0 auto;
 }
 
 .header {
@@ -1550,7 +1559,7 @@ body {
 }
 
 .category__top-text {
-  margin: 0 auto 60px;
+  margin-bottom: 60px;
 }
 
 .category__top-items {
@@ -1674,6 +1683,190 @@ body {
   padding: 12px 37px;
 }
 
+.products {
+  padding: 115px 0 120px;
+  text-align: center;
+}
+
+.products__title {
+  margin-bottom: 20px;
+}
+
+.products__title-text {
+  margin-bottom: 60px;
+}
+
+.products__link {
+  color: #29282d;
+  text-transform: uppercase;
+  border: 1px solid #fe3e57;
+  padding: 10px 32px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.products__link:hover {
+  background-color: #fe3e57;
+  color: #fff;
+}
+
+.products-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 40px;
+  margin-bottom: 55px;
+}
+
+.products-box__item {
+  text-align: center;
+  max-width: 370px;
+}
+
+.products-box__img-box {
+  position: relative;
+  overflow: hidden;
+  height: 370px;
+  margin-bottom: 30px;
+}
+
+.products-box__img-box:hover .products-box__item-links {
+  transform: translateY(0);
+}
+
+.products-box__img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products-box__item-links {
+  background-color: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 212px;
+  width: 100%;
+  min-height: 50px;
+  transform: translateY(500%);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.products-box__item-link path {
+  transition: 0.3s;
+}
+
+.products-box__item-link:hover path {
+  fill: #fe3e57;
+}
+
+.products-box__item-link svg {
+  vertical-align: sub;
+}
+
+.products-box__item-title {
+  color: #29282d;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.products-box__item-prices {
+  display: flex;
+  justify-content: center;
+}
+
+.products-box__item-oldprice {
+  text-decoration: line-through;
+}
+
+.products-box__item-newprice {
+  color: #29282d;
+  margin-right: 17px;
+}
+
+.nowebp .deal {
+  background-image: url("../img/deal-bg.jpg"); }
+
+.deal {
+  padding: 150px 0 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.deal__inner {
+  max-width: 570px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+}
+
+.deal__subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fe3e57;
+  margin-bottom: 10px;
+}
+
+.deal__title {
+  margin-bottom: 50px;
+}
+
+.deal__clock {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deal__clock-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.deal__link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #29282d;
+  border: 1px solid #fe3e57;
+  width: 170px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.deal__link:hover {
+  color: #fff;
+  background-color: #fe3e57;
+  box-shadow: inset 0 0 0 1px #fe3e57, 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+.deal__days,
+.deal__hours,
+.deal__minutes,
+.deal__seconds {
+  font-size: 48px;
+  line-height: 1;
+  color: #29282d;
+}
+
 @media all and (min-width: 1024px) {
   .fancybox__container {
     --carousel-button-width: 48px;
@@ -1726,3 +1919,5 @@ body {
 .webp .tranding-fashion { background-image: url(../img/content/tranding-fashion/bg.webp); }
 
 .webp .tranding-fashion__video { background-image: url(../img/content/tranding-fashion/1.webp); }
+
+.webp .deal { background-image: url(../img/deal-bg.webp); }
