@@ -2,6 +2,11 @@ $accent-color: #fe3e57;
 $default-color: #8d8d8d;
 $title-color: #29282d;
 
+$inputBg: #FFFFFF;
+$inputText: #747474;
+$bg-1: #E3E0DD;
+$bg-2: #EEE5DA;
+
 %quicksand-400 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
@@ -23,17 +28,20 @@ $title-color: #29282d;
   font-weight: 700;
 }
 %btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $accent-color;
   color: #fff;
   text-transform: uppercase;
-  padding: 13px 38px;
   @extend %roboto-400;
   letter-spacing: 1px;
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-  &:hover {
-    background-color: #fff;
-    color: $accent-color;
-    box-shadow: inset 0 0 0 1px $accent-color, 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-    transition: 0.3s;
-  }
+}
+%checkbox-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

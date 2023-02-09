@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230115111208" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230209152126" />
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header header--404">
   <div class="container">
     <div class="header__inner">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" src="img/logo.png" alt="logo" /></picture>
       </a>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link menu__list-link--active" href="#">Home</a>
+            <a class="menu__list-link menu__list-link--active" href="index.html">Home</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Shop</a>
+            <a class="menu__list-link" href="shop.html">Shop</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Page</a>
+            <a class="menu__list-link" href="product.html">Page</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Blog</a>
+            <a class="menu__list-link" href="blog.html">Blog</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Contact</a>
+            <a class="menu__list-link" href="contacts.html">Contact</a>
           </li>
         </ul>
       </nav>
       <div class="user-nav">
         <ul class="user-nav__list">
           <li class="user-nav__list-item">
-            <a class="user-nav__list-link" href="#">
+            <a class="user-nav__list-link" href="login.html">
               <img src="img/icons/user.svg" alt="user icon">
             </a>
           </li>
@@ -223,7 +223,7 @@
               dolore aliqua.
             </p>
             <div class="products-box">
-              <div class="products-box__item">
+              <div class="products-box__item products-box__item--sale">
                 <div class="products-box__img-box">
                   <picture><source srcset="img/content/products/1.webp" type="image/webp"><img src="img/content/products/1.jpg" alt="foto" /></picture>
                   <div class="products-box__item-links">
@@ -256,19 +256,26 @@
                     </a>
                   </div>
                 </div>
-                <div class="star-rating">
-                  <div class="rating-result">
-                    <span class="active"></span>	
-                    <span class="active"></span>    
-                    <span class="active"></span>  
-                    <span class="active"></span>    
-                    <span></span>
+                <div class="products-box__item-info">
+                  <div class="star-rating">
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
-                </div>
-                <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
-                <div class="products-box__item-prices">
-                  <div class="products-box__item-newprice">$34.00</div>
-                  <div class="products-box__item-oldprice">$27.00</div>
+                  <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
+                  <div class="products-box__item-prices">
+                    <div class="products-box__item-newprice">$34.00</div>
+                    <div class="products-box__item-oldprice">$27.00</div>
+                  </div>
+                  <p class="products-box__item-text">
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna
+                    aliqua.
+                  </p>
+                  <button class="products-box__item-btn">Add to cart</button>
                 </div>
               </div>
               <div class="products-box__item">
@@ -304,22 +311,29 @@
                     </a>
                   </div>
                 </div>
-                <div class="star-rating">
-                  <div class="rating-result">
-                    <span class="active"></span>	
-                    <span class="active"></span>    
-                    <span class="active"></span>  
-                    <span class="active"></span>    
-                    <span></span>
+                <div class="products-box__item-info">
+                  <div class="star-rating">
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
-                </div>
-                <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
-                <div class="products-box__item-prices">
-                  <div class="products-box__item-newprice">$34.00</div>
-                  <div class="products-box__item-oldprice">$27.00</div>
+                  <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
+                  <div class="products-box__item-prices">
+                    <div class="products-box__item-newprice">$34.00</div>
+                    <div class="products-box__item-oldprice">$27.00</div>
+                  </div>
+                  <p class="products-box__item-text">
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna
+                    aliqua.
+                  </p>
+                  <button class="products-box__item-btn">Add to cart</button>
                 </div>
               </div>
-              <div class="products-box__item">
+              <div class="products-box__item products-box__item--sale">
                 <div class="products-box__img-box">
                   <picture><source srcset="img/content/products/3.webp" type="image/webp"><img src="img/content/products/3.jpg" alt="foto" /></picture>
                   <div class="products-box__item-links">
@@ -352,19 +366,26 @@
                     </a>
                   </div>
                 </div>
-                <div class="star-rating">
-                  <div class="rating-result">
-                    <span class="active"></span>	
-                    <span class="active"></span>    
-                    <span class="active"></span>  
-                    <span class="active"></span>    
-                    <span></span>
+                <div class="products-box__item-info">
+                  <div class="star-rating">
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
-                </div>
-                <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
-                <div class="products-box__item-prices">
-                  <div class="products-box__item-newprice">$34.00</div>
-                  <div class="products-box__item-oldprice">$27.00</div>
+                  <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
+                  <div class="products-box__item-prices">
+                    <div class="products-box__item-newprice">$34.00</div>
+                    <div class="products-box__item-oldprice">$27.00</div>
+                  </div>
+                  <p class="products-box__item-text">
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna
+                    aliqua.
+                  </p>
+                  <button class="products-box__item-btn">Add to cart</button>
                 </div>
               </div>
               <div class="products-box__item">
@@ -400,22 +421,29 @@
                     </a>
                   </div>
                 </div>
-                <div class="star-rating">
-                  <div class="rating-result">
-                    <span class="active"></span>	
-                    <span class="active"></span>    
-                    <span class="active"></span>  
-                    <span class="active"></span>    
-                    <span></span>
+                <div class="products-box__item-info">
+                  <div class="star-rating">
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
-                </div>
-                <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
-                <div class="products-box__item-prices">
-                  <div class="products-box__item-newprice">$34.00</div>
-                  <div class="products-box__item-oldprice">$27.00</div>
+                  <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
+                  <div class="products-box__item-prices">
+                    <div class="products-box__item-newprice">$34.00</div>
+                    <div class="products-box__item-oldprice">$27.00</div>
+                  </div>
+                  <p class="products-box__item-text">
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna
+                    aliqua.
+                  </p>
+                  <button class="products-box__item-btn">Add to cart</button>
                 </div>
               </div>
-              <div class="products-box__item">
+              <div class="products-box__item products-box__item--sale">
                 <div class="products-box__img-box">
                   <picture><source srcset="img/content/products/5.webp" type="image/webp"><img src="img/content/products/5.jpg" alt="foto" /></picture>
                   <div class="products-box__item-links">
@@ -448,19 +476,26 @@
                     </a>
                   </div>
                 </div>
-                <div class="star-rating">
-                  <div class="rating-result">
-                    <span class="active"></span>	
-                    <span class="active"></span>    
-                    <span class="active"></span>  
-                    <span class="active"></span>    
-                    <span></span>
+                <div class="products-box__item-info">
+                  <div class="star-rating">
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
-                </div>
-                <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
-                <div class="products-box__item-prices">
-                  <div class="products-box__item-newprice">$34.00</div>
-                  <div class="products-box__item-oldprice">$27.00</div>
+                  <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
+                  <div class="products-box__item-prices">
+                    <div class="products-box__item-newprice">$34.00</div>
+                    <div class="products-box__item-oldprice">$27.00</div>
+                  </div>
+                  <p class="products-box__item-text">
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna
+                    aliqua.
+                  </p>
+                  <button class="products-box__item-btn">Add to cart</button>
                 </div>
               </div>
               <div class="products-box__item">
@@ -496,19 +531,26 @@
                     </a>
                   </div>
                 </div>
-                <div class="star-rating">
-                  <div class="rating-result">
-                    <span class="active"></span>	
-                    <span class="active"></span>    
-                    <span class="active"></span>  
-                    <span class="active"></span>    
-                    <span></span>
+                <div class="products-box__item-info">
+                  <div class="star-rating">
+                    <div class="rating-mini">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span></span>
+                    </div>
                   </div>
-                </div>
-                <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
-                <div class="products-box__item-prices">
-                  <div class="products-box__item-newprice">$34.00</div>
-                  <div class="products-box__item-oldprice">$27.00</div>
+                  <h5 class="products-box__item-title">White Polo Men’s T-Shirt</h5>
+                  <div class="products-box__item-prices">
+                    <div class="products-box__item-newprice">$34.00</div>
+                    <div class="products-box__item-oldprice">$27.00</div>
+                  </div>
+                  <p class="products-box__item-text">
+                    Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna
+                    aliqua.
+                  </p>
+                  <button class="products-box__item-btn">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -520,7 +562,7 @@
             <div class="deal__inner">
               <h6 class="deal__subtitle">Style Fashion</h6>
               <h3 class="deal__title title">DEAL OF THE DAY</h3>
-              <div class="deal__clock" data-time="2023-01-25">
+              <div class="deal__clock" data-time="2023-03-25">
                 <div class="deal__clock-item">
                   <span class="deal__days"></span>
                   <div class="deal__clock-text">Days</div>
@@ -566,21 +608,21 @@
             </div>
           </div>
         </div>
-        <section class="blog">
+        <section class="blogs">
           <div class="container">
-            <h3 class="blog__title title">From Our Blog</h3>
-            <p class="blog__title-text title-text">
+            <h3 class="blogs__title title">From Our Blog</h3>
+            <p class="blogs__title-text title-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodmoe tempor incididunt ut labore et
               dolore aliqua.
             </p>
-            <div class="blog__items">
-              <div class="blog__item">
-                <a class="blog__item-img" href="#">
+            <div class="blogs__items">
+              <div class="blogs__item">
+                <a class="blogs__item-img" href="#">
                   <picture><source srcset="img/content/blog/1.webp" type="image/webp"><img src="img/content/blog/1.jpg" alt="" /></picture>
                 </a>
-                <div class="blog__item-content">
-                  <div class="blog__item-info">
-                    <a class="blog__author" href="#">
+                <div class="blogs__item-content">
+                  <div class="blog-box-info">
+                    <a class="blog-box-info__author" href="#">
                       <svg width="20px" height="20px">
                         <path
                           fill-rule="evenodd"
@@ -590,7 +632,7 @@
                       </svg>
                       By Admin
                     </a>
-                    <a class="blog__date" href="#">
+                    <a class="blog-box-info__date" href="#">
                       <svg width="20px" height="20px">
                         <path
                           fill-rule="evenodd"
@@ -601,8 +643,8 @@
                       10 January, 2020
                     </a>
                   </div>
-                  <a class="blog__item-title" href="#"> Our Apps User Use Mobile On His Mobile </a>
-                  <a class="blog__link" href="#">
+                  <a class="blogs__item-title" href="#"> Our Apps User Use Mobile On His Mobile </a>
+                  <a class="blogs__link" href="#">
                     Read More
                     <svg width="10px" height="8px">
                       <path
@@ -614,13 +656,13 @@
                   </a>
                 </div>
               </div>
-              <div class="blog__item">
-                <a class="blog__item-img" href="#">
+              <div class="blogs__item">
+                <a class="blogs__item-img" href="#">
                   <picture><source srcset="img/content/blog/2.webp" type="image/webp"><img src="img/content/blog/2.jpg" alt="" /></picture>
                 </a>
-                <div class="blog__item-content">
-                  <div class="blog__item-info">
-                    <a class="blog__author" href="#">
+                <div class="blogs__item-content">
+                  <div class="blog-box-info">
+                    <a class="blog-box-info__author" href="#">
                       <svg width="20px" height="20px">
                         <path
                           fill-rule="evenodd"
@@ -630,7 +672,7 @@
                       </svg>
                       By Admin
                     </a>
-                    <a class="blog__date" href="#">
+                    <a class="blog-box-info__date" href="#">
                       <svg width="20px" height="20px">
                         <path
                           fill-rule="evenodd"
@@ -641,8 +683,8 @@
                       10 January, 2020
                     </a>
                   </div>
-                  <a class="blog__item-title" href="#"> Our Apps User Use Mobile On His Mobile </a>
-                  <a class="blog__link" href="#">
+                  <a class="blogs__item-title" href="#"> Our Apps User Use Mobile On His Mobile </a>
+                  <a class="blogs__link" href="#">
                     Read More
                     <svg width="10px" height="8px">
                       <path
@@ -654,13 +696,13 @@
                   </a>
                 </div>
               </div>
-              <div class="blog__item">
-                <a class="blog__item-img" href="#">
+              <div class="blogs__item">
+                <a class="blogs__item-img" href="#">
                   <picture><source srcset="img/content/blog/3.webp" type="image/webp"><img src="img/content/blog/3.jpg" alt="" /></picture>
                 </a>
-                <div class="blog__item-content">
-                  <div class="blog__item-info">
-                    <a class="blog__author" href="#">
+                <div class="blogs__item-content">
+                  <div class="blog-box-info">
+                    <a class="blog-box-info__author" href="#">
                       <svg width="20px" height="20px">
                         <path
                           fill-rule="evenodd"
@@ -670,7 +712,7 @@
                       </svg>
                       By Admin
                     </a>
-                    <a class="blog__date" href="#">
+                    <a class="blog-box-info__date" href="#">
                       <svg width="20px" height="20px">
                         <path
                           fill-rule="evenodd"
@@ -681,8 +723,8 @@
                       10 January, 2020
                     </a>
                   </div>
-                  <a class="blog__item-title" href="#"> Our Apps User Use Mobile On His Mobile </a>
-                  <a class="blog__link" href="#">
+                  <a class="blogs__item-title" href="#"> Our Apps User Use Mobile On His Mobile </a>
+                  <a class="blogs__link" href="#">
                     Read More
                     <svg width="10px" height="8px">
                       <path
@@ -717,9 +759,9 @@
               <a class="footer-top__contacts-link" href="tel:+02838388393">+0283 838 8393</a>
             </li>
           </ul>
-          <ul class="footer-top__socials">
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+          <ul class="footer-top__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="11px" height="18px" viewBox="0 0 11 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -730,8 +772,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
                   <g id="surface1">
                     <path
@@ -742,8 +784,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -754,8 +796,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -766,8 +808,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="13px" height="17px" viewBox="0 0 13 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -848,6 +890,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20230115111208"></script>
+    <script src="js/app.min.js?_v=20230209152126"></script>
   </body>
 </html>

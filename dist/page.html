@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230115111208">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230209152126" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
+      <header class="header header--404">
   <div class="container">
     <div class="header__inner">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" src="img/logo.png" alt="logo" /></picture>
       </a>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link menu__list-link--active" href="#">Home</a>
+            <a class="menu__list-link menu__list-link--active" href="index.html">Home</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Shop</a>
+            <a class="menu__list-link" href="shop.html">Shop</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Page</a>
+            <a class="menu__list-link" href="product.html">Page</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Blog</a>
+            <a class="menu__list-link" href="blog.html">Blog</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Contact</a>
+            <a class="menu__list-link" href="contacts.html">Contact</a>
           </li>
         </ul>
       </nav>
       <div class="user-nav">
         <ul class="user-nav__list">
           <li class="user-nav__list-item">
-            <a class="user-nav__list-link" href="#">
+            <a class="user-nav__list-link" href="login.html">
               <img src="img/icons/user.svg" alt="user icon">
             </a>
           </li>
@@ -64,10 +64,26 @@
   </div>
 </header>
 
-        <main class="main">
-           
-        </main>
-        <footer class="footer">
+      <main class="main">
+        <section class="top">
+          <div class="top__container" style="background-image: url('img/top-bg.jpg')">
+            <div class="container">
+              <h2 class="top__title title">Log in</h2>
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Log in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-top__inner">
@@ -86,9 +102,9 @@
               <a class="footer-top__contacts-link" href="tel:+02838388393">+0283 838 8393</a>
             </li>
           </ul>
-          <ul class="footer-top__socials">
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+          <ul class="footer-top__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="11px" height="18px" viewBox="0 0 11 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -99,8 +115,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
                   <g id="surface1">
                     <path
@@ -111,8 +127,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -123,8 +139,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -135,8 +151,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-top__socials-item">
-              <a class="footer-top__socials-link" href="#">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
                 <svg width="13px" height="17px" viewBox="0 0 13 17" version="1.1">
                   <g id="surface1">
                     <path
@@ -216,7 +232,7 @@
   </div>
 </footer>
 
-        <script src="js/app.min.js?_v=20230115111208"></script>
+      <script src="js/app.min.js?_v=20230209152126"></script>
     </div>
-</body>
+  </body>
 </html>
