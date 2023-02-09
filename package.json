@@ -10,7 +10,9 @@
   "author": "Sergey Kopylov",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "browser-sync": "^2.27.10",
+    "choices.js": "^10.2.0",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -28,7 +30,10 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.6.3",
     "sass": "^1.55.0",
+    "slick-carousel": "^1.8.1",
     "webp-converter": "2.2.3",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+        <section class="top">
+          <div class="top__container" style="background-image: url('@img/top-bg.jpg')">
+            <div class="container">
+              <h2 class="top__title title">Log in</h2>
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Log in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="authorization">
+          <div class="container">
+            <div class="authorization__head">
+              <a class="authorization__head-link" href="register.html">Register</a>
+              <a class="authorization__head-link authorization__head-link--active" href="#">Log in</a>
+            </div>
+            <form class="authorization__form">
+              <label class="authorization__form-label">
+                <span> Username or email address*</span>
+                <input class="authorization__form-input authorization__form-input--username" type="text" required/>
+              </label>
+              <label class="authorization__form-label">
+                <span> Password*</span>
+                <input class="authorization__form-input authorization__form-input--password" type="password" required/>
+              </label>
+              <label class="authorization__form-label">
+                <input class="authorization__form-checkbox" type="checkbox" />
+                <span> Remember me</span>
+              </label>
+              <button class="authorization__form-btn" type="submit">Log in</button>
+              <a class="authorization__form-link" href="#">Lost your password?</a>
+            </form>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+      <script src="js/app.min.js"></script>
+    </div>
+  </body>
+</html>
