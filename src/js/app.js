@@ -7,6 +7,23 @@ import Choices from 'choices.js';
 
 myFunctions.isWebp();
 
+if ('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch)) {
+  console.log('this is a touch device');
+} else {
+  console.log('this is not a touch device');
+  document.body.classList.add('no-touch');
+}
+
+const menuLinks = document.querySelectorAll('.menu__list-link');
+menuLinks.forEach(function (item) {
+  if (window.location.pathname.indexOf(item.getAttribute('href')) > -1) {
+    menuLinks.forEach(function (el) {
+      el.classList.remove('menu__list-link--active');
+    });
+    item.classList.add('menu__list-link--active');
+  }
+});
+
 $('.top-slider__inner').slick({
   dots: true,
   arrows: false,
@@ -218,4 +235,13 @@ tabBtns.forEach(function (item) {
     });
     currentContent.classList.add('active');
   });
+});
+
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.toggle('clicked');
+  menu.classList.toggle('active');
+  document.body.classList.toggle('no-scroll');
 });
