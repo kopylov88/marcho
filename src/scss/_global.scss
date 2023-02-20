@@ -3,6 +3,9 @@ body {
   font-size: 16px;
   line-height: calc(26 / 16);
   color: $default-color;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 .wrapper {
   display: flex;
@@ -17,6 +20,67 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  span {
+    width: 30px;
+    height: 3px;
+    background-color: #373a39;
+    transition: 0.3s;
+  }
+}
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .title {
   @extend %roboto-700;
   font-size: 48px;
