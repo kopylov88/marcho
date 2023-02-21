@@ -45,10 +45,20 @@ $('.product-slide__big').slick({
   dots: false,
   arrows: false,
   fade: true,
+  draggable: false,
   asNavFor: '.product-slide__thumbs',
   slidesToShow: 1,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings: {
+        draggable: true,
+      },
+    },
+  ],
 });
+
 $('.blog-list__slider').slick({
   dots: false,
   arrows: true,
@@ -245,3 +255,11 @@ menuBtn.addEventListener('click', function () {
   menu.classList.toggle('active');
   document.body.classList.toggle('no-scroll');
 });
+
+const filterBtn = document.querySelector('.shop-sort__filter-btn');
+const filter = document.querySelector('.filter');
+if (filter) {
+  filterBtn.addEventListener('click', function () {
+    filter.classList.toggle('active');
+  });
+}

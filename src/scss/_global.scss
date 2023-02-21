@@ -96,6 +96,7 @@ textarea:focus:-ms-input-placeholder {
 .breadcrumbs {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   &__item {
