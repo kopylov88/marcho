@@ -2245,6 +2245,7 @@ Build date: 2019-12-19 16:51:02
   padding: 0px;
   margin: 0px;
   border: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -3963,7 +3964,6 @@ textarea:focus:-ms-input-placeholder {
 
 .shop-sort .is-open .choices__list--dropdown {
   z-index: 2;
-  white-space: nowrap;
 }
 
 .shop-sort .choices::after {
@@ -4967,6 +4967,11 @@ textarea:focus:-ms-input-placeholder {
     right: auto;
     left: 10px;
   }
+
+  .shop-sort .choices__list--dropdown .choices__item--selectable,
+  .shop-sort .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 0;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -5492,6 +5497,11 @@ textarea:focus:-ms-input-placeholder {
   .reviews__form-label {
     display: block;
   }
+
+  .product-tabs__btn {
+    margin-right: 0;
+    display: block;
+  }
 }
 
 @media (max-width: 640px) {
@@ -5575,6 +5585,11 @@ textarea:focus:-ms-input-placeholder {
 
   .related {
     padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .related__title {
+    margin-bottom: 20px;
   }
 }
 
@@ -5687,6 +5702,10 @@ textarea:focus:-ms-input-placeholder {
   .pagination__next,
   .pagination__prev {
     display: none;
+  }
+
+  .footer-top__item-title {
+    margin-bottom: 15px;
   }
 }
 
