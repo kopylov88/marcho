@@ -3962,7 +3962,10 @@ textarea:focus:-ms-input-placeholder {
   border: none;
 }
 
-.shop-sort .is-open .choices__list--dropdown {
+.shop-sort .choices__list--dropdown,
+.shop-sort .choices__list[aria-expanded] {
+  width: auto;
+  white-space: nowrap;
   z-index: 2;
 }
 
@@ -4970,7 +4973,7 @@ textarea:focus:-ms-input-placeholder {
 
   .shop-sort .choices__list--dropdown .choices__item--selectable,
   .shop-sort .choices__list[aria-expanded] .choices__item--selectable {
-    padding-right: 0;
+    padding-right: 10px;
   }
 }
 
