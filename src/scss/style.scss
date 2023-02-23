@@ -1239,9 +1239,16 @@
     background-color: transparent;
     border: none;
   }
-  .is-open .choices__list--dropdown {
-    z-index: 2;
+  .choices__list--dropdown, .choices__list[aria-expanded] {
+    width: auto;
     white-space: nowrap;
+    z-index: 2;
+  }
+  @media (min-width: 640px) {
+    .choices__list--dropdown .choices__item--selectable,
+    .choices__list[aria-expanded] .choices__item--selectable {
+      padding-right: 10px;
+    }
   }
   .choices::after {
     content: '';

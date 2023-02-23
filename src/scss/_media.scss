@@ -387,6 +387,10 @@
   .reviews__form-label {
     display: block;
   }
+  .product-tabs__btn {
+    margin-right: 0;
+    display: block;
+}
 }
 @media (max-width: 600px) {
   .user-nav {
@@ -445,6 +449,10 @@
   }
   .related {
     padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .related__title {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 500px) {
@@ -533,5 +541,8 @@
   .pagination__next,
   .pagination__prev {
     display: none;
+  }
+  .footer-top__item-title {
+    margin-bottom: 15px;
   }
 }
